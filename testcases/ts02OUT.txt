@@ -1,0 +1,34 @@
+TASK LISTER OUTPUT START
+
+	Task : 0
+	Task : 2
+	Task : 3
+	Task : 6
+	Task : 1
+	Task : 5
+	Task : 7
+	Task : 4
+	Task : 8
+	Task : 9
+
+TASK LISTER OUTPUT END
+
+MACHINE ASSIGNER OUTPUT START
+
+      Processor           Task     Start Time    Finish Time
+              0
+                             0              0             16
+                             2             16             28
+                             3             28             32
+                             6             32             40
+                             4             40             65
+                             8             65             94
+                             9             98            108
+              1
+                             0              0             14
+                             1             14             28
+                             5             28             56
+                             7             70             87
+
+MACHINE ASSIGNER OUTPUT END
+
