@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\Environment.o
+./release\MachineAssigner.o
+./release\Processor.o
+./release\Schedule.o
+./release\Task.o
+./release\TaskDAG.o
+./release\TaskLister.o
+./release\TaskScheduler.o
+./release\UIWindow.o
+./release\moc_UIWindow.o
+);

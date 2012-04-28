@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\Environment.o
+./debug\MachineAssigner.o
+./debug\Processor.o
+./debug\Schedule.o
+./debug\Task.o
+./debug\TaskDAG.o
+./debug\TaskLister.o
+./debug\TaskScheduler.o
+./debug\UIWindow.o
+./debug\moc_UIWindow.o
+);
