@@ -20,13 +20,13 @@ void TaskScheduler::input(int argc,const string& str)
      int tNum,pNum;
      stringstream cin;
      cin<<str;
-     cin>>tNum;
-     cin>>pNum;
+     cin>>tNum; //task number
+     cin>>pNum; //core number
      //Processor Generation and StartUp Matrix
      for(int i=0;i<pNum;i++)
      {
           int st=0;
-          cin>>st;
+          cin>>st; //startup cost of each core
           char buffer[pNum];
           itoa(i,buffer,10);
           Processor prc(buffer,st);
@@ -99,22 +99,14 @@ void TaskScheduler::output(string& str)
      cout<<endl;
      cout<<taskLister;
      cout<<endl;
-     //cout<<"TASK LISTER OUTPUT END";
-     //cout<<endl;
      cout<<endl;
-     cout<<"MACHINE ASSIGNER";
+     cout<<"CORE ASSIGNER";
      cout<<endl;
      cout<<endl;
      cout<<mAssigner;
      cout<<endl;
-     //cout<<"MACHINE ASSIGNER OUTPUT END";
-     //cout<<endl;
-     cout<<endl;
-/*cout<<"INPUT SUMMARY START";
-cout<<endl;
-cout<<env;
-cout<<taskDAG;
-cout<<endl;*/
+    cout<<endl;
+
      str = cout.str();
 }
 

@@ -11,7 +11,7 @@ ostream& operator<<(ostream& out,MachineAssigner mAssigner)
       Environment& env = mAssigner.getEnv();
       vector<Processor>& procV = env.getProcVector();
       out<<setw(15);
-      out<<"Processor";
+      out<<"Core Number";
       out<<setw(15);
       out<<"Task";
       out<<setw(15);
