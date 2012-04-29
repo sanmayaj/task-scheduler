@@ -47,19 +47,15 @@ void UIWindow::setupGui()
 {
     fileNameLabel = new QLabel(tr("Input"));
     outputLabel = new QLabel(tr(""));
-    //fileNameLineEdit = new QLineEdit;
     insertTextObjectButton = new QPushButton(tr("Insert File ..."));
     processButton = new QPushButton(tr(" Process "));
 
-    //fileNameLineEdit->setText("./files/heart.svg");
     connect(insertTextObjectButton, SIGNAL(clicked()),
             this, SLOT(setInput()));
     connect(processButton, SIGNAL(clicked()),
             this, SLOT(setOutput()));
 
     QHBoxLayout *bottomLayout = new QHBoxLayout;
-    //bottomLayout->addWidget(fileNameLabel);
-    //bottomLayout->addWidget(fileNameLineEdit);
     bottomLayout->addWidget(insertTextObjectButton);
     bottomLayout->addWidget(processButton);
 
