@@ -1,4 +1,3 @@
-
 #include "MachineAssigner.h"
 #include<list>
 #include<iomanip>
@@ -55,10 +54,6 @@ void MachineAssigner::execute()
           (*task).setTFT(tft);
           processor=&procVector[min];
           loadCriticals();
-          /*if(cp!=0)
-          cout<<"Critical Task 1 : "<<(*cp).name()<<endl;
-          if(cp2!=0)
-          cout<<"Critical Task 2 : "<<(*cp2).name()<<endl;*/
           if(testDuplication())
           {
                 //cout<<"Duplication Possible"<<endl;
@@ -105,9 +100,6 @@ long MachineAssigner::computeTST(Processor& processor)
      {
              long ft=(*parents[i]).fTime();
              long cc=0;
-             /*cout<<"R : "<<(*((*parents[i]).processor())-processor)<<endl;
-             cout<<"S : "<<(*((*parents[i]).processor())).getStartUp()<<endl;
-             cout<<"D : "<<((*(parents[i]))-(*task))<<endl;*/
              if((*((*parents[i]).processor())-processor))
                  cc=(*((*parents[i]).processor())).getStartUp()+((*((*parents[i]).processor())-processor))*((*(parents[i]))-(*task));
              //cout<<"TST F : "<<max<<" : "<<ft<<" : "<<cc<<endl;

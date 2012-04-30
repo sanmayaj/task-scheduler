@@ -41,13 +41,8 @@ void TaskDAG::orderTraverse()
             }
             pos++;
      }
-     /*cout<<"TRAVERSED ORDER START"<<endl;
-     for(int i=0;i<traverseIndex.size();i++)
-     {
-         cout<<"\tTask : "<<taskNodes[traverseIndex[i]].name()<<endl;
-     }
-     cout<<"TRAVERSED ORDER END"<<endl<<endl;*/
 }
+
 void TaskDAG::computeCriticals()
 {
      for(int i=0;i<traverseIndex.size();i++)

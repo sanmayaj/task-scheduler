@@ -26,10 +26,6 @@ ostream& operator<<(ostream& out,Processor& processor)
      for(p=cc.begin();p!=cc.end();p++)
      {
           out<<"\t[ "<<(*p).first<<" , "<<(*p).second<<" ]"<<endl;
-          /*if(p==cc.begin())
-              out<<setw(10)<<(*p).first<<setw(10)<<(*p).second<<endl;
-          else
-              out<<setw(45)<<(*p).first<<setw(10)<<(*p).second<<endl;*/
      }
      //out<<"Processor Available at : "<<processor.availTime()<<endl;
      out<<endl;

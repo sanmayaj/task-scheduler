@@ -52,10 +52,6 @@ ostream& operator<<(ostream& out,Task& task)
      {
              out<<"\tChild "<<i<<" : "<<(*(child[i])).name()<<" Data : "<<childCC[i]<<endl;
      }
-     //out<<"AEST : "<<task.getAEST()<<endl;
-     //out<<"ALST : "<<task.getALST()<<endl;
-     //if(task.processor()!=0)
-     //out<<"Assigned Processor : "<<*(task.processor())<<endl;
      out<<endl;
 }
 //functions
